@@ -1,0 +1,162 @@
+/* HOME */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    font-size: 200%;
+}
+
+body {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+
+.sosmed{
+    float: right;
+    color: #1f87aa;
+    margin: 10px;
+}
+
+.sosmed:hover{
+    color: #f8dba5;
+    transition: 1s;
+}
+
+nav{
+    background: #ffffff;
+    border-radius: 0px 0px 100px 0px;
+}
+
+.nav, .bar, button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav_link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav_link .nav{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_link .nav .bar{
+    transition: all 0.4s ease 0s;
+}
+
+.nav_link .nav .bar:hover{
+   color: #f8dba5;
+   text-decoration: underline;
+}
+
+button{
+    padding: 5px 20px;
+    background-color: rgb(58, 183, 236);
+    border: none;
+    border-radius: 0px 0px 50px 0px   ;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+}
+
+button:hover{
+    padding-right: 70px ;
+    background: rgb(249, 219, 128);
+    transition: all 0.4s ease 0s;
+    text-decoration: underline black;
+}
+
+.kontak:hover{
+    color: black;
+}
+
+h1{
+    font-size: 50px;
+    font-family: Dosis;
+    text-align: center;
+    background: #ffffff;
+    color: black;
+    padding: 20px 20px 20px 20px;
+    border-radius: 50px;
+}
+
+h2{
+    font-size: 40px;
+    font-family: Ysabeau;
+    text-align: center;
+}
+
+
+.dokumentasi{
+    width: 350px;
+    height: 350px;
+    padding: 0px 30px;
+    margin: 20px;
+}
+
+td{
+    font-family: Gabarito;
+    text-align: center;
+}
+
+h3{
+  font-family: Poppins;  
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 30px 30px 0px;
+  background: wheat;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .nav_link, .nav, .bar, body {
+      float: none;
+      display: block;
+    }
+    
+    .nav_link, .nav, .bar {
+      position: static; 
+      top: 0; 
+      left: 0; 
+      transform: none; 
+    }
+
+    h1 {
+        font-size: 25px;
+        padding: 20px; 
+        border-radius: 20px; 
+    }
+
+    .dokumentasi{
+        width: 100px;
+        height: 100px;
+        padding: 0px 10px;
+        margin: 5px;
+    }
+    
+    td {
+        font-size: 12px; 
+    }
+
+    h3 {
+        font-size: 15px; 
+        padding: 10px; 
+    }
+}
+
+

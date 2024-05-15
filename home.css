@@ -1,0 +1,208 @@
+/* HOME */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    font-size: 200%;
+}
+
+body {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+
+.sosmed{
+    float: right;
+    color: #1f87aa;
+    margin: 10px;
+}
+
+.sosmed:hover{
+    color: #f8dba5;
+    transition: 1s;
+}
+
+nav{
+    background: #ffffff;
+    border-radius: 0px 0px 100px 0px;
+}
+
+.nav, .bar, button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav_link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav_link .nav{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_link .nav .bar{
+    transition: all 0.4s ease 0s;
+}
+
+.nav_link .nav .bar:hover{
+   color: #f8dba5;
+   text-decoration: underline;
+}
+
+button{
+    padding: 5px 20px;
+    background-color: rgb(58, 183, 236);
+    border: none;
+    border-radius: 0px 0px 50px 0px   ;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+}
+
+button:hover{
+    padding-right: 70px ;
+    background: rgb(249, 219, 128);
+    transition: all 0.4s ease 0s;
+    text-decoration: underline black;
+}
+
+.kontak:hover{
+    color: black;
+}
+
+.foto_home{
+    width: 51%;
+    height: 30%;
+}
+
+h1{
+    display: inline;
+    position: absolute;
+    padding: 0px 50px ;
+    font-family: Ysabeau ;
+    font-size: 40px;
+    border-radius: 50px;
+}
+
+h2{
+    display: inline;
+    position: absolute;
+    padding: 50px 90px;
+    font-family: Ysabeau ;  
+}
+
+.saya{
+    display: inline;
+    position: absolute;
+    padding: 80px 90px;
+    font-family: Ysabeau ; 
+    font-weight: bold;   
+}
+
+.riwayat_pendidikan{
+    font-family: Ysabeau ;  
+    font-weight: bold;  
+    font-size: 20px;
+    padding: 0px 20px;
+}
+
+.riwayat_pendidikan1{
+    font-family: Ysabeau ;  
+    font-weight: bold;  
+    font-size: 40px;
+    padding: 0px 0px;
+}
+
+.riwayat_pendidikan2{
+    display: inline-block;
+    font-family: Gabarito ;  
+    font-weight: bold;  
+    font-size: 20px;
+    padding: 0px 0px;
+    background: wheat;
+}
+
+.riwayat_pendidikan3{
+    display: inline-block;
+    font-family: Gabarito ;  
+    font-weight: bold;  
+    font-size: 20px;
+    padding: 0px 0px;
+    background: wheat;
+}
+.riwayat_pendidikan4{
+    display: inline-block;
+    font-family: Gabarito ;  
+    font-weight: bold;  
+    font-size: 20px;
+    padding: 0px 0px;
+    background: wheat;
+}
+
+.gambar, .gambar1{
+    width: 70%;
+    height: 70%;
+    border-radius: 15px;
+}
+
+.foto_home{
+    width: 48%;
+    height: 20%;
+    border-radius: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content : center;
+}
+
+@media screen and (max-width: 600px) {
+    .nav_link, .nav, .bar, body {
+      float: none;
+      display: block;
+    }
+    
+    .nav_link, .nav, .bar {
+      position: static; 
+      transform: none;
+    }
+
+    .foto_home{
+        width: 100%;
+        height: auto; 
+        border-radius: 15px;
+    }   
+
+    h1, h2, .saya, .riwayat_pendidikan {
+        position: static; 
+        padding: 10px 0; 
+        text-align: center; 
+    }
+
+    .riwayat_pendidikan2, .riwayat_pendidikan3, .riwayat_pendidikan4 {
+        display: block; 
+        margin-bottom: 10px; 
+    }
+
+    .gambar{
+        width: 100%;
+        padding-top: 20px; 
+
+    .gambar1{
+        width: 100%;
+    }
+    }
+}

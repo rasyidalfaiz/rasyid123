@@ -1,0 +1,231 @@
+/* HOME */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    font-size: 200%;
+}
+
+body {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+
+.sosmed{
+    float: right;
+    color: #1f87aa;
+    margin: 10px;
+}
+
+.sosmed:hover{
+    color: #f8dba5;
+    transition: 1s;
+}
+
+nav{
+    background: #ffffff;
+    border-radius: 0px 0px 100px 0px;
+}
+
+.nav, .bar, button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav_link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav_link .nav{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_link .nav .bar{
+    transition: all 0.4s ease 0s;
+}
+
+.nav_link .nav .bar:hover{
+   color: #f8dba5;
+   text-decoration: underline;
+}
+
+button{
+    padding: 5px 20px;
+    background-color: rgb(58, 183, 236);
+    border: none;
+    border-radius: 0px 0px 50px 0px   ;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+}
+
+button:hover{
+    padding-right: 70px ;
+    background: rgb(249, 219, 128);
+    transition: all 0.4s ease 0s;
+    text-decoration: underline black;
+}
+
+.kontak:hover{
+    color: black;
+}
+
+h1{
+    font-size: 50px;
+    font-family: Dosis;
+    text-align: center;
+    background: #f5f5f5;
+    color: black;
+    padding: 20px 20px 20px 20px;
+    border-radius: 50px;
+}
+
+table{
+    text-align: justify;
+}
+
+.pengalaman{
+    padding: 0px 0px 0px 90px;
+    font-family: Gabarito;
+}
+
+.organisasi{
+    padding: 0px 0px 0px 150px;
+    font-family: Gabarito;
+}
+
+.satu, .dua, .tiga{
+    padding: 20px 0px 0px 180px;
+    font-family: Ysabeau;
+}
+
+
+.keahlian, .kepelatihan{
+    text-align: center;
+    font-family: Ysabeau;
+    background: gray;
+    padding: 10px 0px 0px 0px;
+    color: white;
+}
+
+.image{
+    display: flex;
+    width: 100%;
+    transition: 3s;
+}
+
+.image img{
+   max-width:100%;
+   height: 300px%;
+   border-radius: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content : center;
+}
+.cover{
+    width: 900px;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#slide-1:target~.image{
+    margin-left: 0px;
+}
+
+#slide-2:target~.image{
+    margin-left: -100%;
+}
+
+#slide-3:target~.image{
+    margin-left: -200%;
+}
+
+#slide-4:target~.image{
+    margin-left: -300%;
+}
+
+#slide-5:target~.image{
+    margin-left: -400%;
+}
+
+.navigation a{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: wheat;
+    font-size: 0px;
+    border-radius: 50%;
+    margin: 3px;
+    transition: 1s;
+}
+
+.navigation a:hover{
+    background-color: rgb(0, 217, 255);
+}
+
+.navigation{
+    position: absolute;
+    margin-left: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: -50px;
+}
+
+@media screen and (max-width: 600px) {
+    .nav_link, .nav, .bar, body {
+      float: none;
+      display: block;
+    }
+    
+    .nav_link, .nav, .bar {
+      position: relative;
+      top: 0;
+      left: 100;
+      transform: none;
+    }
+
+    h1{
+        font-size: 25px;
+        font-family: Dosis;
+        text-align: center;
+        background: white;
+        color: black;
+        padding: 20px 20px 20px 20px;
+        border-radius: 50px;
+    }
+
+    .pengalaman{
+        padding: 0px 0px 0px 20px;
+        font-family: Gabarito;
+        font-size: 10px;
+    }
+    
+    .organisasi{
+        padding: 0px 0px 0px 40px;
+        font-family: Gabarito;
+        font-size: 10px;
+    }
+
+    .cover{
+        width: 90%;
+    }
+
+}

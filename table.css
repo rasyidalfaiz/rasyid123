@@ -1,0 +1,158 @@
+/* HOME */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    font-size: 200%;
+}
+
+body {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+
+.sosmed{
+    float: right;
+    color: #1f87aa;
+    margin: 10px;
+}
+
+.sosmed:hover{
+    color: #f8dba5;
+    transition: 1s;
+}
+
+nav{
+    background: #ffffff;
+    border-radius: 0px 0px 100px 0px;
+}
+
+.nav, .bar, button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav_link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav_link .nav{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_link .nav .bar{
+    transition: all 0.4s ease 0s;
+}
+
+.nav_link .nav .bar:hover{
+   color: #f8dba5;
+   text-decoration: underline;
+}
+
+button{
+    padding: 5px 20px;
+    background-color: rgb(58, 183, 236);
+    border: none;
+    border-radius: 0px 0px 50px 0px   ;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+}
+
+button:hover{
+    padding-right: 70px ;
+    background: rgb(249, 219, 128);
+    transition: all 0.4s ease 0s;
+    text-decoration: underline black;
+}
+
+.kontak:hover{
+    color: black;
+}
+
+h1{
+    font-size: 50px;
+    font-family: Dosis;
+    text-align: center;
+    background: #fdfdfd;
+    color: black;
+    padding: 20px 20px 20px 20px;
+    border-radius: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+
+table th, table td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: justify;
+
+}
+
+table th {
+    background-color: #464d85;
+}
+.gambar{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    padding: 30px 20px 0px 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .nav_link, .nav, .bar, body {
+      float: none;
+      display: block;
+    }
+    
+    .nav_link, .nav, .bar {
+      position: relative;
+      top: 0;
+      left: 100;
+      transform: none;
+    }
+
+    .logo{
+        width: 10%;
+        height: 10%;
+    }
+
+    h1{
+        font-size: 25px;
+        font-family: Dosis;
+        text-align: center;
+        background:wheat;
+        color: black;
+        padding: 20px 20px 20px 20px;
+        border-radius: 50px;
+    }
+
+    .satu, .dua, .tiga{
+        padding: 20px 0px 0px 10px;
+        font-family: Ysabeau;
+        font-size: 15px;
+    }
+
+    .gambar{
+        width: 90px;
+        height: 90px; 
+        padding: 10px 10px 0px 10px;
+    }
+}
